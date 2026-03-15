@@ -60,7 +60,6 @@ const Projects = () => {
           <h2 className="text-white">My Projects</h2>
         </div>
         
-        {/* Added col-12 so it stacks on phones, 2-wide on tablets, 3-wide on desktops */}
         <div className="row g-4">
           {projects.map((project, i) => (
             <div key={i} className="col-12 col-md-6 col-lg-4">
@@ -70,7 +69,6 @@ const Projects = () => {
                   <img src={project.img} alt={project.title} className="project-image" />
                 </div>
                 
-                {/* Removed the height stretching classes from this div */}
                 <div className="p-4">
                   <h3 className="project-title mb-3">{project.title}</h3>
                   

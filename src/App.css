@@ -35,42 +35,40 @@ body {
 }
 /* Button Base */
 .btn-primary {
-    display: inline-block; /* Crucial for anchor tags to accept padding and transforms properly */
-    text-decoration: none; /* Removes the default link underline */
-    color: #ffffff; /* Ensures the text is readable */
+    display: inline-block; 
+    text-decoration: none; 
+    color: #ffffff; 
     background: var(--secondary);
-    border: 2px solid transparent; /* Prevents layout shift on hover if you ever add a border */
+    border: 2px solid transparent; 
     padding: 0.8rem 2.5rem;
     font-size: 1.1rem;
     font-weight: 600;
     border-radius: 50px;
-    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); /* Smoother, more premium transition */
-    box-shadow: 0 4px 15px rgba(0, 159, 253, 0.3); /* Slightly softer initial shadow */
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); 
+    box-shadow: 0 4px 15px rgba(0, 159, 253, 0.3); 
     cursor: pointer;
 }
 
-/* Button Hover State */
 .btn-primary:hover {
     background: var(--accent);
-    transform: translateY(-3px) scale(1.02); /* Slight scale makes it pop */
-    box-shadow: 0 8px 25px rgba(255, 164, 0, 0.4); /* Enhanced glow effect */
-    color: #ffffff; /* Keeps text white on hover */
+    transform: translateY(-3px) scale(1.02); 
+    box-shadow: 0 8px 25px rgba(255, 164, 0, 0.4); 
+    color: #ffffff; 
 }
 
-/* Button Active State (When clicked) */
 .btn-primary:active {
-    transform: translateY(1px); /* Gives physical click feedback */
+    transform: translateY(1px);
     box-shadow: 0 2px 10px rgba(255, 164, 0, 0.3);
 }
 #about {
     background: var(--dark);
-    padding: 80px 0; /* Ensures consistent vertical spacing */
+    padding: 80px 0; 
 }
 
 .about-content {
     display: flex;
     align-items: center;
-    gap: 5rem; /* Increased gap for better spacing */
+    gap: 5rem;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -82,11 +80,10 @@ body {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     transform: rotate(-3deg);
     transition: transform 0.5s ease;
-    /* Removed extra opacity/x styling here since GSAP handles the initial state */
 }
 
 .about-image:hover {
-    transform: rotate(0deg) scale(1.02); /* Added a slight scale so it pops out more */
+    transform: rotate(0deg) scale(1.02); 
 }
 
 .about-image img {
@@ -110,19 +107,17 @@ body {
     margin-bottom: 1.5rem;
     font-size: 1.1rem;
     line-height: 1.7;
-    color: #d1d5db; /* Softer white for readability */
+    color: #d1d5db;
 }
 
-/* --- MOBILE RESPONSIVENESS --- */
-/* Stacks the image and text on top of each other on smaller screens */
 @media (max-width: 991px) {
     .about-content {
         flex-direction: column;
-        gap: 3rem; /* Reduces gap on mobile */
+        gap: 3rem;
     }
     
     .about-image {
-        width: 80%; /* Prevents the image from being massively tall on tablets */
+        width: 80%; 
         margin: 0 auto;
     }
 }
@@ -159,7 +154,7 @@ section {
   border-radius: 2px;
 }
 
-/* Navbar specific */
+
 .navbar {
   background: rgba(26, 26, 46, 0.95);
   backdrop-filter: blur(10px);
@@ -200,11 +195,10 @@ section {
     padding: 80px 0;
 }
 
-/* --- Refined Card Styling --- */
 .project-card {
-    background-color: #1e1e24; /* Solid, premium dark background */
+    background-color: #1e1e24; 
     border: 1px solid rgba(255, 255, 255, 0.05);
-    border-radius: 1rem; /* Softer corners */
+    border-radius: 1rem; 
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
@@ -212,14 +206,14 @@ section {
 .project-card:hover {
     transform: translateY(-8px);
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
-    border-color: rgba(0, 159, 253, 0.3); /* Subtle glow on border when hovered */
+    border-color: rgba(0, 159, 253, 0.3); 
 }
 
-/* --- Image Styling --- */
+
 .project-image-wrapper {
     height: 200px;
     overflow: hidden;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05); /* Separates image from text */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .project-image {
@@ -231,10 +225,9 @@ section {
 }
 
 .project-card:hover .project-image {
-    transform: scale(1.05); /* Gentle zoom on hover */
+    transform: scale(1.05); 
 }
 
-/* --- Typography --- */
 .project-title {
     color: #ffffff;
     font-size: 1.25rem;
@@ -242,28 +235,27 @@ section {
 }
 
 .project-desc {
-    color: #a1a1aa; /* Soft grey for readability */
+    color: #a1a1aa; 
     font-size: 0.95rem;
     line-height: 1.6;
 }
 
-/* --- Badges --- */
+
 .project-badge {
-    background: rgba(0, 159, 253, 0.15); /* Soft blue background */
-    color: #38bdf8; /* Bright blue text */
+    background: rgba(0, 159, 253, 0.15); 
+    color: #38bdf8; 
     font-weight: 500;
     padding: 0.4em 0.8em;
-    border-radius: 6px; /* Slightly squarer badges look more modern */
+    border-radius: 6px;
     font-size: 0.8rem;
 }
 
-/* --- Button Styling --- */
 .btn-project {
     display: inline-block;
-    background: #009ffd; /* Solid blue button */
+    background: #009ffd; 
     color: #ffffff;
     padding: 0.6rem 1.5rem;
-    border-radius: 8px; /* Matches badge styling */
+    border-radius: 8px; 
     font-size: 0.95rem;
     font-weight: 500;
     text-decoration: none;
@@ -271,13 +263,13 @@ section {
 }
 
 .btn-project:hover {
-    background: #007acc; /* Darkens slightly on hover */
+    background: #007acc; 
     color: #ffffff;
     transform: translateY(-2px);
 }
 .footer-section {
     background: #0a0a1a;
-    padding: 3rem 2rem; /* Slightly more vertical padding for breathing room */
+    padding: 3rem 2rem; 
     text-align: center;
     border-top: 1px solid rgba(255, 255, 255, 0.05);
     display: flex;
@@ -301,23 +293,21 @@ section {
     align-items: center;
     justify-content: center;
     font-size: 1.3rem;
-    color: #d1d5db; /* Soft white/gray icon color */
+    color: #d1d5db; 
     text-decoration: none;
-    border: 1px solid transparent; /* Prevents tiny layout shifts on hover */
-    /* A cubic-bezier transition gives it a nice "spring" effect */
+    border: 1px solid transparent; 
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
 }
 
 .social-link:hover {
     background: var(--secondary, #009ffd);
     color: #ffffff;
-    /* Scales up slightly while floating up */
     transform: translateY(-5px) scale(1.1); 
-    box-shadow: 0 10px 20px rgba(0, 159, 253, 0.3); /* Adds a soft glow */
+    box-shadow: 0 10px 20px rgba(0, 159, 253, 0.3); 
 }
 
 .copyright-text {
-    color: #a1a1aa; /* Muted text so it doesn't distract from the icons */
+    color: #a1a1aa; 
     font-size: 0.95rem;
     margin: 0;
     letter-spacing: 0.5px;
@@ -340,19 +330,16 @@ section {
     z-index: 10;
 }
 
-/* Ensure the drop zone has space to breathe */
 #skills {
     min-height: 100vh;
     padding-bottom: 100px;
 }
 
-/* Initial state for GSAP */
 .about-image, .about-text {
     opacity: 0;
     will-change: transform, opacity;
 }
 
-/* Image styling and hover effect */
 .about-image img {
     width: 100%;
     height: auto;
@@ -364,7 +351,6 @@ section {
     transform: rotate(0deg) scale(1.02) !important;
 }
 
-/* Ensure the section doesn't have horizontal scroll during animation */
 #about {
     overflow-x: hidden;
 }

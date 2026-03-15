@@ -19,13 +19,13 @@ const Contact = () => {
         },
         duration: 1,
         y: 50,
-        opacity: 0, // FIXED: Starts invisible and fades in smoothly
+        opacity: 0, 
         stagger: 0.3,
         ease: "power3.out"
       });
     }, sectionRef);
 
-    return () => ctx.revert(); // Cleans up the animation if the user navigates away
+    return () => ctx.revert(); 
   }, []);
 
   return (
@@ -36,7 +36,6 @@ const Contact = () => {
         </div>
         
         <div className="row g-5">
-          {/* Left Side: Contact Information */}
           <div className="col-lg-5">
             <div className="contact-card p-4 rounded-4 shadow h-100" style={{ background: 'rgba(255, 255, 255, 0.05)', border: '1px solid rgba(255, 255, 255, 0.1)', backdropFilter: 'blur(10px)' }}>
               <h3 className="mb-4" style={{ color: 'var(--accent)' }}>Contact Information</h3>
@@ -63,7 +62,6 @@ const Contact = () => {
             </div>
           </div>
 
-          {/* Right Side: Formspree Form */}
           <div className="col-lg-7">
             <div className="contact-card p-4 rounded-4 shadow" style={{ background: 'rgba(255, 255, 255, 0.05)', border: '1px solid rgba(255, 255, 255, 0.1)' }}>
               

@@ -24,7 +24,6 @@ const Skills = () => {
       const skillItems = gsap.utils.toArray('.skill-drop-item');
       const containerWidth = dropZoneRef.current.offsetWidth;
       
-      // Circle calculation logic
       const centerX = containerWidth / 2;
       const centerY = 300;
       const radius = 220;
@@ -35,20 +34,18 @@ const Skills = () => {
         const targetX = centerX + radius * Math.cos(angle) - 60; // Offset for half item width
         const targetY = centerY + radius * Math.sin(angle);
 
-        // Initial setup
         gsap.set(item, {
           x: Math.random() * (containerWidth - 120),
           y: -150,
           opacity: 0
         });
 
-        // The Drop Animation
         gsap.to(item, {
           scrollTrigger: {
             trigger: "#skills",
             start: "top 40%",
             end: "bottom 20%",
-            scrub: 1.5, // Smooth scrubbing
+            scrub: 1.5, 
           },
           y: targetY,
           x: targetX,
@@ -57,7 +54,6 @@ const Skills = () => {
         });
       });
 
-      // Simple Fade-in for the fallback grid (mobile)
       gsap.from(".skill-card", {
         scrollTrigger: {
           trigger: ".skills-grid",
@@ -80,8 +76,6 @@ const Skills = () => {
         <div className="section-title text-center mb-5">
           <h2 className="text-white">My Skills</h2>
         </div>
-
-        {/* Droplet Animation Zone - Visible on Desktop */}
         <div className="skill-drop-zone d-none d-lg-block" ref={dropZoneRef} style={{ height: '650px', position: 'relative' }}>
           {skills.map((skill, index) => (
             <div key={index} className="skill-drop-item text-center p-3 rounded-4 shadow" 
@@ -99,7 +93,6 @@ const Skills = () => {
           ))}
         </div>
 
-        {/* Static Grid - Visible on Mobile/Tablet */}
         <div className="skills-grid row g-4 d-lg-none mt-4">
           {skills.map((skill, index) => (
             <div key={index} className="col-6 col-sm-4 col-md-3">

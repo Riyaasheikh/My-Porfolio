@@ -6,12 +6,10 @@ const Hero = () => {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      // Added staggered animations for a smoother flow
       gsap.from(".hero-title", { duration: 1, y: 50, opacity: 0, ease: "power3.out" });
       gsap.from(".hero-subtitle", { duration: 1, y: 50, opacity: 0, delay: 0.2, ease: "power3.out" });
       gsap.from(".hero-text", { duration: 1, y: 50, opacity: 0, delay: 0.4, ease: "power3.out" });
       
-      // Fixed: opacity should start at 0 so it fades IN
       gsap.from(".btn-primary", {
         duration: 1,
         y: 20, 
@@ -29,8 +27,8 @@ const Hero = () => {
     alignItems: 'center',
     justifyContent: 'center',
     textAlign: 'center',
-    minHeight: '100vh', // Ensures the hero takes up the full screen
-    padding: '0 20px', // Adds a little breathing room on mobile screens
+    minHeight: '100vh', 
+    padding: '0 20px',
     background: `linear-gradient(135deg, rgba(26, 26, 46, 0.9) 0%, rgba(22, 33, 62, 0.9) 100%), 
                  url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1170&q=80') center/cover`,
   };

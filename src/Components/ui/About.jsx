@@ -24,7 +24,6 @@ const About = () => {
         onStart: () => gsap.set(".about-image", { x: -100, opacity: 0 }) 
       });
 
-      // Text Animation
       gsap.to(".about-text", {
         scrollTrigger: {
           trigger: ".about-text",
@@ -47,7 +46,6 @@ const About = () => {
       <div className="container py-5">
         <div className="section-title mb-5"><h2>About Me</h2></div>
         
-        {/* Removed Bootstrap grid classes here to let custom Flexbox take over */}
         <div className="about-content">
           
           <div className="about-image">
@@ -62,7 +60,6 @@ const About = () => {
             <h3>Full Stack Developer from Sahiwal, Pakistan</h3>
             <p>Hello! I'm Riya Rafiq, a 22-year-old passionate developer currently in my 7th semester at Comsats University Islamabad, Sahiwal Campus.</p>
             
-            {/* Kept Bootstrap grid for these inner cards as it works well here */}
             <div className="row mt-4">
               <div className="col-md-6 mb-3">
                 <div className="p-3 border border-secondary border-dashed rounded h-100">
