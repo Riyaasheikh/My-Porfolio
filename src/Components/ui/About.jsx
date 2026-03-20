@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import riyanPhoto from '../../assets/myImg.jpeg';
+import riyaPhoto from '../../assets/myImg.jpeg';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -42,7 +42,6 @@ const About = () => {
     return () => ctx.revert();
   }, []);
 
-  
   const boxStyle = {
     background: '#111827',
     border: '1px dashed rgba(255, 255, 255, 0.2)',
@@ -60,7 +59,7 @@ const About = () => {
           <div className="col-lg-5 mb-4 mb-lg-0">
             <div className="about-image">
               <img 
-                src={riyanPhoto} 
+                src={riyaPhoto} 
                 alt="Riya Rafiq" 
                 className="img-fluid rounded-4 shadow-lg border border-secondary" 
               />
@@ -71,9 +70,8 @@ const About = () => {
             <div className="about-text text-white">
               <h3 className="mb-3 text-info fw-semibold">Full-Stack Developer & Mobile App Specialist</h3>
               <p className="opacity-1 mb-4">
-                Hello! I'm Riya Rafiq, a 22-year-old passionate developer currently in my 7th semester 
-                at COMSATS University Islamabad, Sahiwal Campus. I love turning complex problems 
-                into simple, beautiful, and intuitive designs.
+                Hello! I'm Riya Rafiq. 
+                I love turning complex problems into simple, beautiful, and intuitive designs.
               </p>
               
               <div className="row g-3">
@@ -81,7 +79,7 @@ const About = () => {
                   <div className="p-4 h-100" style={boxStyle}>
                     <i className="fas fa-user-graduate me-2 text-info fs-5"></i>
                     <span className="text-white fw-bold">Education</span> 
-                    <p className="mb-0 mt-2 text-white-50 small">BS Computer Science, COMSATS Sahiwal</p>
+                    <p className="mb-0 mt-2 text-white-50 small">BS Computer Science, COMSATS University</p>
                   </div>
                 </div>
 
@@ -90,14 +88,6 @@ const About = () => {
                     <i className="fas fa-briefcase me-2 text-warning fs-5"></i>
                     <span className="text-white fw-bold">Experience</span> 
                     <p className="mb-0 mt-2 text-white-50 small">Intern at Developer Hub Co.</p>
-                  </div>
-                </div>
-
-                <div className="col-md-12">
-                  <div className="p-4 h-100" style={boxStyle}>
-                    <i className="fas fa-map-marker-alt me-2 text-danger fs-5"></i>
-                    <span className="text-white fw-bold">Location</span> 
-                    <p className="mb-0 mt-2 text-white-50 small">Sahiwal, Punjab, Pakistan</p>
                   </div>
                 </div>
               </div>
