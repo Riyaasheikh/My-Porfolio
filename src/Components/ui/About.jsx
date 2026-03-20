@@ -57,7 +57,7 @@ const About = () => {
           </div>
 
           <div className="about-text">
-            <h3>Full Stack Developer from Sahiwal, Pakistan</h3>
+            <h3>Full-Stack Developer & Mobile App Specialist</h3>
             <p>Hello! I'm Riya Rafiq, a 22-year-old passionate developer currently in my 7th semester at Comsats University Islamabad, Sahiwal Campus.</p>
             
             <div className="row mt-4">

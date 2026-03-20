@@ -1,6 +1,6 @@
-import React, { useEffect, useRef } from 'react';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import React, { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -16,14 +16,16 @@ const Skills = () => {
     { name: "Bootstrap", icon: "fab fa-bootstrap", color: "#563d7c" },
     { name: "GSAP", icon: "fas fa-code", color: "#88ce02" },
     { name: "PHP", icon: "fab fa-php", color: "#777bb3" },
-    { name: "Laravel", icon: "fas fa-server", color: "#ff2d20" }
+    { name: "Laravel", icon: "fas fa-server", color: "#ff2d20" },
+    { name: "Flutter", icon: "fas fa-mobile-alt", color: "#02569B" },
+{ name: "Firebase", icon: "fas fa-fire", color: "#FFCA28" },
   ];
 
   useEffect(() => {
     let ctx = gsap.context(() => {
-      const skillItems = gsap.utils.toArray('.skill-drop-item');
+      const skillItems = gsap.utils.toArray(".skill-drop-item");
       const containerWidth = dropZoneRef.current.offsetWidth;
-      
+
       const centerX = containerWidth / 2;
       const centerY = 300;
       const radius = 220;
@@ -37,7 +39,7 @@ const Skills = () => {
         gsap.set(item, {
           x: Math.random() * (containerWidth - 120),
           y: -150,
-          opacity: 0
+          opacity: 0,
         });
 
         gsap.to(item, {
@@ -45,48 +47,60 @@ const Skills = () => {
             trigger: "#skills",
             start: "top 40%",
             end: "bottom 20%",
-            scrub: 1.5, 
+            scrub: 1.5,
           },
           y: targetY,
           x: targetX,
           opacity: 1,
-          ease: "bounce.out"
+          ease: "bounce.out",
         });
       });
 
       gsap.from(".skill-card", {
         scrollTrigger: {
           trigger: ".skills-grid",
-          start: "top 90%"
+          start: "top 90%",
         },
         y: 30,
         opacity: 0,
         stagger: 0.1,
-        duration: 0.8
+        duration: 0.8,
       });
-
     }, componentRef);
 
     return () => ctx.revert();
   }, [skills.length]);
 
   return (
-    <section id="skills" ref={componentRef} style={{ background: 'linear-gradient(135deg, #0f0c29 0%, #302b63 100%)' }}>
+    <section
+      id="skills"
+      ref={componentRef}
+      style={{
+        background: "linear-gradient(135deg, #0f0c29 0%, #302b63 100%)",
+      }}
+    >
       <div className="container position-relative">
         <div className="section-title text-center mb-5">
           <h2 className="text-white">My Skills</h2>
         </div>
-        <div className="skill-drop-zone d-none d-lg-block" ref={dropZoneRef} style={{ height: '650px', position: 'relative' }}>
+        <div
+          className="skill-drop-zone d-none d-lg-block"
+          ref={dropZoneRef}
+          style={{ height: "650px", position: "relative" }}
+        >
           {skills.map((skill, index) => (
-            <div key={index} className="skill-drop-item text-center p-3 rounded-4 shadow" 
-                 style={{ 
-                   position: 'absolute', 
-                   width: '120px', 
-                   background: 'rgba(255,255,255,0.05)', 
-                   backdropFilter: 'blur(10px)', 
-                   border: '1px solid rgba(255,255,255,0.1)', 
-                   color: skill.color 
-                 }}>
+            <div
+              key={index}
+              className="skill-drop-item text-center p-3 rounded-4 shadow"
+              style={{
+                position: "absolute",
+                width: "120px",
+                background: "rgba(255,255,255,0.05)",
+                backdropFilter: "blur(10px)",
+                border: "1px solid rgba(255,255,255,0.1)",
+                color: skill.color,
+              }}
+            >
               <i className={`${skill.icon} fa-3x mb-2`}></i>
               <div className="fw-bold text-white">{skill.name}</div>
             </div>
@@ -96,8 +110,17 @@ const Skills = () => {
         <div className="skills-grid row g-4 d-lg-none mt-4">
           {skills.map((skill, index) => (
             <div key={index} className="col-6 col-sm-4 col-md-3">
-              <div className="skill-card p-4 text-center rounded-4 h-100" style={{ background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)' }}>
-                <i className={`${skill.icon} fa-2x mb-2`} style={{ color: skill.color }}></i>
+              <div
+                className="skill-card p-4 text-center rounded-4 h-100"
+                style={{
+                  background: "rgba(255,255,255,0.05)",
+                  border: "1px solid rgba(255,255,255,0.1)",
+                }}
+              >
+                <i
+                  className={`${skill.icon} fa-2x mb-2`}
+                  style={{ color: skill.color }}
+                ></i>
                 <h3 className="h6 mb-0 text-white">{skill.name}</h3>
               </div>
             </div>

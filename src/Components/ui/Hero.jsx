@@ -40,7 +40,7 @@ const Hero = () => {
           Riya Rafiq
         </h1>
         <h2 className="hero-subtitle mb-4" style={{ color: 'var(--secondary)', fontSize: '2rem' }}>
-          Full Stack Developer
+          Full Stack & Mobile App Developer
         </h2>
         <p className="hero-text" style={{ color: '#d1d5db', maxWidth: '600px', margin: '0 auto 2rem auto', lineHeight: '1.6' }}>
           I build exceptional digital experiences with modern web technologies. Currently studying at COMSATS Sahiwal.
