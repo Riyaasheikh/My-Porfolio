@@ -10,74 +10,99 @@ const About = () => {
 
   useEffect(() => {
     let ctx = gsap.context(() => {
-      // Image Animation
+      gsap.set(".about-image, .about-text", { opacity: 0 });
+
       gsap.to(".about-image", {
         scrollTrigger: {
           trigger: ".about-image",
-          start: "top 80%",
+          start: "top 85%",
           toggleActions: "play none none none"
         },
-        duration: 1,
+        duration: 1.2,
         x: 0,
         opacity: 1,
         ease: "power3.out",
-        onStart: () => gsap.set(".about-image", { x: -100, opacity: 0 }) 
+        startAt: { x: -100 } 
       });
 
       gsap.to(".about-text", {
         scrollTrigger: {
           trigger: ".about-text",
-          start: "top 80%"
+          start: "top 85%"
         },
-        duration: 1,
+        duration: 1.2,
         x: 0,
         opacity: 1,
         ease: "power3.out",
-        delay: 0.2,
-        onStart: () => gsap.set(".about-text", { x: 100, opacity: 0 })
+        delay: 0.3,
+        startAt: { x: 100 }
       });
     }, sectionRef);
 
     return () => ctx.revert();
   }, []);
 
+  
+  const boxStyle = {
+    background: '#111827',
+    border: '1px dashed rgba(255, 255, 255, 0.2)',
+    borderRadius: '12px'
+  };
+
   return (
-    <section id="about" ref={sectionRef} style={{ overflow: 'hidden' }}>
-      <div className="container py-5">
-        <div className="section-title mb-5"><h2>About Me</h2></div>
+    <section id="about" ref={sectionRef} className="bg-black py-5" style={{ overflow: 'hidden' }}>
+      <div className="container">
+        <div className="section-title mb-5">
+          <h2 className="text-white fw-bold">About Me</h2>
+        </div>
         
-        <div className="about-content">
-          
-          <div className="about-image">
-            <img 
-              src={riyanPhoto} 
-              alt="Riyan" 
-              className="img-fluid" 
-            />
+        <div className="row align-items-center">
+          <div className="col-lg-5 mb-4 mb-lg-0">
+            <div className="about-image">
+              <img 
+                src={riyanPhoto} 
+                alt="Riya Rafiq" 
+                className="img-fluid rounded-4 shadow-lg border border-secondary" 
+              />
+            </div>
           </div>
 
-          <div className="about-text">
-            <h3>Full-Stack Developer & Mobile App Specialist</h3>
-            <p>Hello! I'm Riya Rafiq, a 22-year-old passionate developer currently in my 7th semester at Comsats University Islamabad, Sahiwal Campus.</p>
-            
-            <div className="row mt-4">
-              <div className="col-md-6 mb-3">
-                <div className="p-3 border border-secondary border-dashed rounded h-100">
-                  <i className="fas fa-user-graduate me-2" style={{ color: 'var(--secondary)' }}></i>
-                  <strong>Education:</strong> 
-                  <p className="mb-0 mt-2">BS Computer Science, COMSATS Sahiwal</p>
+          <div className="col-lg-7">
+            <div className="about-text text-white">
+              <h3 className="mb-3 text-info fw-semibold">Full-Stack Developer & Mobile App Specialist</h3>
+              <p className="opacity-1 mb-4">
+                Hello! I'm Riya Rafiq, a 22-year-old passionate developer currently in my 7th semester 
+                at COMSATS University Islamabad, Sahiwal Campus. I love turning complex problems 
+                into simple, beautiful, and intuitive designs.
+              </p>
+              
+              <div className="row g-3">
+                <div className="col-md-6">
+                  <div className="p-4 h-100" style={boxStyle}>
+                    <i className="fas fa-user-graduate me-2 text-info fs-5"></i>
+                    <span className="text-white fw-bold">Education</span> 
+                    <p className="mb-0 mt-2 text-white-50 small">BS Computer Science, COMSATS Sahiwal</p>
+                  </div>
                 </div>
-              </div>
-              <div className="col-md-6 mb-3">
-                <div className="p-3 border border-secondary border-dashed rounded h-100">
-                  <i className="fas fa-map-marker-alt me-2" style={{ color: 'var(--secondary)' }}></i>
-                  <strong>Location:</strong> 
-                  <p className="mb-0 mt-2">Sahiwal, Pakistan</p>
+
+                <div className="col-md-6">
+                  <div className="p-4 h-100" style={boxStyle}>
+                    <i className="fas fa-briefcase me-2 text-warning fs-5"></i>
+                    <span className="text-white fw-bold">Experience</span> 
+                    <p className="mb-0 mt-2 text-white-50 small">Intern at Developer Hub Co.</p>
+                  </div>
+                </div>
+
+                <div className="col-md-12">
+                  <div className="p-4 h-100" style={boxStyle}>
+                    <i className="fas fa-map-marker-alt me-2 text-danger fs-5"></i>
+                    <span className="text-white fw-bold">Location</span> 
+                    <p className="mb-0 mt-2 text-white-50 small">Sahiwal, Punjab, Pakistan</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </section>

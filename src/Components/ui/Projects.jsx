@@ -14,10 +14,10 @@ const Projects = () => {
   const [visibleCount, setVisibleCount] = useState(initialCount);
 
   const projects = [
-    { title: "E-commerce Platform", img: p3, tech: ["React", "Laravel", "MySQL"], category: "web", desc: "Full-featured e-commerce platform.", link: 'https://github.com/Riyaasheikh/ecommerce-fullstack-design' },
-    { title: "Quran Web App", img: p1, tech: ["React", "Bootstrap", "GSAP", "Api"], category: "web", desc: "Customizable Quran template.", link: "https://github.com/Riyaasheikh/Quran-project" },
-    { title: "Task Flow App", img: p5, tech: ["Flutter", "Material UI", "Firebase", "Dart"], category: "mobile", desc: "Mobile productivity application.", link: "https://github.com/Riyaasheikh/task-flow" },
-    { title: "Portfolio Collaboration", img: p2, tech: ["React", "GSAP", "Bootstrap"], category: "web", desc: "Interactive portfolio design.", link: "https://github.com/Riyaasheikh/Porfore" },
+    { title: "E-commerce Platform", img: p3, tech: ["React", "Laravel", "MySQL"], category: "web", desc: "A full-featured e-commerce platform with product listings and secure checkout.", link: 'https://github.com/Riyaasheikh/ecommerce-fullstack-design' },
+    { title: "Quran Web App", img: p1, tech: ["React", "Bootstrap", "GSAP", "Api"], category: "web", desc: "A customizable Quran template with animated sections and responsive design.", link: "https://github.com/Riyaasheikh/Quran-project" },
+    { title: "Task Flow App", img: p5, tech: ["Flutter", "Material UI", "Firebase", "Dart"], category: "mobile", desc: "A mobile productivity application designed for task management and tracking.", link: "https://github.com/Riyaasheikh/task-flow" },
+    { title: "Portfolio Collaboration", img: p2, tech: ["React", "GSAP", "Bootstrap"], category: "web", desc: "A high-end interactive portfolio design. Real time Collaboration Built with React, Tailwind CSS, and GSAP.", link: "https://github.com/Riyaasheikh/Porfore" },
   ];
 
   const toggleProjects = () => {
