@@ -45,7 +45,7 @@ const Footer = () => {
       </div>
 
       <p className="copyright-text">
-        &copy; {currentYear} Riyan Rafiq. All Rights Reserved.
+        &copy; {currentYear} Riya Rafiq. All Rights Reserved.
       </p>
     </footer>
   );

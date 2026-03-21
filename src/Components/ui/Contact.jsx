@@ -40,15 +40,7 @@ const Contact = () => {
             <div className="contact-card p-4 rounded-4 shadow h-100" style={{ background: 'rgba(255, 255, 255, 0.05)', border: '1px solid rgba(255, 255, 255, 0.1)', backdropFilter: 'blur(10px)' }}>
               <h3 className="mb-4" style={{ color: 'var(--accent)' }}>Contact Information</h3>
               
-              <div className="d-flex align-items-center mb-4">
-                <div className="contact-icon me-3 d-flex align-items-center justify-content-center rounded-circle" style={{ width: '50px', height: '50px', background: 'rgba(0, 159, 253, 0.1)', color: 'var(--secondary)' }}>
-                  <i className="fas fa-map-marker-alt"></i>
-                </div>
-                <div>
-                  <h5 className="mb-0 text-white">Location</h5>
-                  <p className="mb-0 text-white opacity-75">Sahiwal, Punjab, Pakistan</p>
-                </div>
-              </div>
+              
 
               <div className="d-flex align-items-center mb-4">
                 <div className="contact-icon me-3 d-flex align-items-center justify-content-center rounded-circle" style={{ width: '50px', height: '50px', background: 'rgba(0, 159, 253, 0.1)', color: 'var(--secondary)' }}>
