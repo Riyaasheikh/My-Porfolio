@@ -43,7 +43,7 @@ const Hero = () => {
           Full Stack & Mobile App Developer
         </h2>
         <p className="hero-text" style={{ color: '#d1d5db', maxWidth: '600px', margin: '0 auto 2rem auto', lineHeight: '1.6' }}>
-          I build exceptional digital experiences with modern web technologies. Currently studying at COMSATS Sahiwal.
+          I build exceptional digital experiences with modern web technologies.
         </p>
         <a href="#projects" className="btn-primary">View My Work</a>
       </div>
