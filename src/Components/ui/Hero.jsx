@@ -37,7 +37,7 @@ const Hero = () => {
     <section  className='d-flex align-items-center justify-content-center relative mt-5' style={heroStyle} ref={heroRef}>
       <div className="hero-content">
         <h1 className="hero-title mb-3" style={{ color: '#ffffff', fontSize: '3.5rem', marginBottom: '0.5rem' }}>
-          Riya Rafiq
+          Riyan Rafiq
         </h1>
         <h2 className="hero-subtitle mb-4" style={{ color: 'var(--secondary)', fontSize: '2rem' }}>
           Full Stack & Mobile App Developer
