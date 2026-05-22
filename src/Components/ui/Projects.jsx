@@ -5,6 +5,7 @@ import p1 from '../../assets/p1.png';
 import p2 from '../../assets/p2.png';
 import p3 from '../../assets/p3.png';
 import p5 from '../../assets/p5.jpeg';
+import p4 from '../../assets/image.png';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -14,10 +15,12 @@ const Projects = () => {
   const [visibleCount, setVisibleCount] = useState(initialCount);
 
   const projects = [
+    { title: " job board hiring portal", img: p4, tech: ["Node.js & Express", "MongoDB", "GSAP","TailwindCss"], category:'mern', desc: "A job board hiring portal built with Node.js, Express, MongoDB, GSAP, and Tailwind CSS.", link: 'https://github.com/Riyaasheikh/mern-job-portal'},
     { title: "E-commerce Platform", img: p3, tech: ["React", "Laravel", "MySQL"], category: "web", desc: "A full-featured e-commerce platform with product listings and secure checkout.", link: 'https://github.com/Riyaasheikh/ecommerce-fullstack-design' },
     { title: "Quran Web App", img: p1, tech: ["React", "Bootstrap", "GSAP", "Api"], category: "web", desc: "A customizable Quran template with animated sections and responsive design.", link: "https://github.com/Riyaasheikh/Quran-project" },
     { title: "Task Flow App", img: p5, tech: ["Flutter", "Material UI", "Firebase", "Dart"], category: "mobile", desc: "A mobile productivity application designed for task management and tracking.", link: "https://github.com/Riyaasheikh/task-flow" },
-    { title: "Portfolio Collaboration", img: p2, tech: ["React", "GSAP", "Bootstrap"], category: "web", desc: "A high-end interactive portfolio design. Real time Collaboration Built with React, Tailwind CSS, and GSAP.", link: "https://github.com/Riyaasheikh/Porfore" },
+    { title: "Portfolio Collaboration", img: p2, tech: ["React", "GSAP", "tailwind"], category: "web", desc: "A high-end interactive portfolio design. Real time Collaboration Built with React, Tailwind CSS, and GSAP.", link: "https://github.com/Riyaasheikh/Porfore" },
+
   ];
 
   const toggleProjects = () => {

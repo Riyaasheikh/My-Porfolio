@@ -19,6 +19,10 @@ const Skills = () => {
     { name: "Laravel", icon: "fas fa-server", color: "#ff2d20" },
     { name: "Flutter", icon: "fas fa-mobile-alt", color: "#02569B" },
     { name: "Firebase", icon: "fas fa-fire", color: "#FFCA28" },
+    { name: "Node.js", icon: "fab fa-node-js", color: "#68A063" },
+    { name: "MongoDB", icon: "fas fa-database", color: "#4DB33D" },
+    { name: "MySQL", icon: "fas fa-database", color: "#00758F" },
+    { name: "Git", icon: "fab fa-git-alt", color: "#F1502F" },
   ];
 
   useEffect(() => {
