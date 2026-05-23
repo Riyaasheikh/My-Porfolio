@@ -42,10 +42,11 @@ const Contact = () => {
               
               
 
-              <div className="d-flex align-items-center mb-4">
-                <div className="contact-icon me-3 d-flex align-items-center justify-content-center rounded-circle" style={{ width: '50px', height: '50px', background: 'rgba(0, 159, 253, 0.1)', color: 'var(--secondary)' }}>
-                  <i className="fas fa-envelope"></i>
-                </div>
+              <div className="d-flex align-items-center mb-4 gap-1">
+                <div className="contact-icon d-flex align-items-center justify-content-center  rounded-circle me-sm-3 mb-3 mb-sm-0 flex-shrink-0" 
+     style={{ width: '50px', height: '50px', background: 'rgba(0, 159, 253, 0.1)', color: 'var(--secondary)' }}>
+  <i className="fas fa-envelope"></i>
+</div>
                 <div>
                   <h5 className="mb-0 text-white">Email</h5>
                   <p className="mb-0 text-white opacity-75">itsriyaasheikh08@gmail.com</p>
