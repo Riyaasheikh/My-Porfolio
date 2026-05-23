@@ -15,7 +15,7 @@ const Projects = () => {
   const [visibleCount, setVisibleCount] = useState(initialCount);
 
   const projects = [
-    { title: " job board hiring portal", img: p4, tech: ["Node.js & Express", "MongoDB", "GSAP","TailwindCss"], category:'mern', desc: "A job board hiring portal built with Node.js, Express, MongoDB, GSAP, and Tailwind CSS.", link: 'https://github.com/Riyaasheikh/mern-job-portal'},
+    { title: " job board hiring portal", img: p4, tech: ["Node.js", "Supabase PostgreSQL database", "GSAP","TypeScript"], category:'mern', desc: "HireBoard is a real-time enterprise job portal featuring a data-driven Employer Dashboard with an automated Applicant Tracking System (ATS) and a matching Job Seeker search feed.", link: 'https://github.com/Riyaasheikh/job-portal'},
     { title: "E-commerce Platform", img: p3, tech: ["React", "Laravel", "MySQL"], category: "web", desc: "A full-featured e-commerce platform with product listings and secure checkout.", link: 'https://github.com/Riyaasheikh/ecommerce-fullstack-design' },
     { title: "Quran Web App", img: p1, tech: ["React", "Bootstrap", "GSAP", "Api"], category: "web", desc: "A customizable Quran template with animated sections and responsive design.", link: "https://github.com/Riyaasheikh/Quran-project" },
     { title: "Task Flow App", img: p5, tech: ["Flutter", "Material UI", "Firebase", "Dart"], category: "mobile", desc: "A mobile productivity application designed for task management and tracking.", link: "https://github.com/Riyaasheikh/task-flow" },
