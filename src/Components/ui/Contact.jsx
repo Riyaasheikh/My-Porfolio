@@ -39,19 +39,32 @@ const Contact = () => {
           <div className="col-lg-5">
             <div className="contact-card p-4 rounded-4 shadow h-100" style={{ background: 'rgba(255, 255, 255, 0.05)', border: '1px solid rgba(255, 255, 255, 0.1)', backdropFilter: 'blur(10px)' }}>
               <h3 className="mb-4" style={{ color: 'var(--accent)' }}>Contact Information</h3>
-              
-              
+              <div className="d-flex align-items-center mb-4">
+  <div
+    className="contact-icon d-flex align-items-center justify-content-center rounded-circle flex-shrink-0 me-3"
+    style={{
+      width: "50px",
+      height: "50px",
+      background: "rgba(0, 159, 253, 0.1)",
+      color: "var(--secondary)",
+    }}
+  >
+    <i className="fas fa-envelope"></i>
+  </div>
 
-              <div className="d-flex align-items-center mb-4 gap-1" >
-                <div className="contact-icon d-flex align-items-center justify-content-center  rounded-circle me-sm-3 mb-3 mb-sm-0 flex-shrink-0" 
-     style={{ width: '50px', height: '50px', background: 'rgba(0, 159, 253, 0.1)', color: 'var(--secondary)' }}>
-  <i className="fas fa-envelope"></i>
+  <div className="flex-grow-1">
+    <h5 className="mb-1 text-white">Email</h5>
+    <p
+      className="mb-0 text-white opacity-75"
+      style={{
+        wordBreak: "break-word",
+        overflowWrap: "break-word",
+      }}
+    >
+      itsriyaasheikh08@gmail.com
+    </p>
+  </div>
 </div>
-                <div>
-                  <h5 className="mb-0 text-white">Email</h5>
-                  <p className="mb-0 text-white opacity-75">itsriyaasheikh08@gmail.com</p>
-                </div>
-              </div>
             </div>
           </div>
 

@@ -22,7 +22,8 @@ const Skills = () => {
     { name: "Node.js", icon: "fab fa-node-js", color: "#68A063" },
     { name: "MongoDB", icon: "fas fa-database", color: "#4DB33D" },
     { name: "MySQL", icon: "fas fa-database", color: "#00758F" },
-    { name: "Git", icon: "fab fa-git-alt", color: "#F1502F" },
+    {name:'Express', icon: 'fas fa-server', color: '#000000'},
+    {name:'git', icon: 'fab fa-git-alt', color: '#F1502F'},
   ];
 
   useEffect(() => {
