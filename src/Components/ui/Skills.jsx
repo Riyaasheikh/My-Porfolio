@@ -13,7 +13,7 @@ const Skills = () => {
     { name: "CSS", icon: "fab fa-css3-alt", color: "#264de4" },
     { name: "JavaScript", icon: "fab fa-js", color: "#f0db4f" },
     { name: "React", icon: "fab fa-react", color: "#61dbfb" },
-    { name: "Bootstrap", icon: "fab fa-bootstrap", color: "#563d7c" },
+    {name: "Tailwind", icon: "fas fa-wind", color: "#38b2ac" },
     { name: "GSAP", icon: "fas fa-code", color: "#88ce02" },
     { name: "PHP", icon: "fab fa-php", color: "#777bb3" },
     { name: "Laravel", icon: "fas fa-server", color: "#ff2d20" },
