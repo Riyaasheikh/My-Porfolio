@@ -70,7 +70,7 @@ const About = () => {
             <div className="about-text text-white">
               <h3 className="mb-3 text-info fw-semibold">Full-Stack Developer & Mobile App Specialist</h3>
               <p className="opacity-1 mb-4">
-                Hello! I'm Riyan Rafiq. 
+                Hello! I'm Riya Rafiq. 
                 I love turning complex problems into simple, beautiful, and intuitive designs.
               </p>
               
